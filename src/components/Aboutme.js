@@ -15,7 +15,7 @@ class Aboutme extends Component{
                         <form action="/reset">
                             <div className="pms_field">
                                 <input type="text" placeholder="" />
-                                <label>example@youremail.com</label>
+                                <label>Email</label>
                             </div>
                             <input type="submit" value="Submit" />
                         </form>

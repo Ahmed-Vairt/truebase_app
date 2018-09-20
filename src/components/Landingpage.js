@@ -13,10 +13,10 @@ class Landing extends Component{
                         <a href="/signup"> <i className="fa fa-paper-plane"></i> Join our Telegram</a>
                     </div>
                     <div className="right_side welcm_back rights_ls">
+                            <h2>Engage the truebase network</h2>
                         <form className="form_main_page" action="/signup">
-                            <h3>Engage the truebase network</h3>
                             <label>I Need </label>
-                            <select className="basic economist">
+                            <select className="basic">
                                 <option value="token">Token economist</option>
                                 <option value="token">Token economist</option>
                                 <option value="">Advisor</option>

@@ -8,10 +8,6 @@ import Signup from './Signup';
 import Reset from './thanks';
 import Wellcomback from './wellcomback';
 import Skills from './skill';
-import Company from './company';
-import Profile from './profile';
-import Ask from './ask';
-import Newask from './new_ask';
 import { BrowserRouter } from 'react-router-dom';
 
 const Main = ()=> (
@@ -25,10 +21,6 @@ const Main = ()=> (
 <Route path='/reset' component={ Reset } />
 <Route path='/wellcomback' component={ Wellcomback } />
 <Route path='/skills' component={ Skills } />
-<Route path='/company' component={ Company } />
-<Route path='/profile' component={ Profile } />
-<Route path='/ask' component={ Ask } />
-<Route path='/new_ask' component={ Newask } />
 </Switch>
 </BrowserRouter>
 

@@ -179,10 +179,11 @@ span.select2.select2-container {
     font-family: 'Calibri', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    width: 89%;
+    width: 100%;
     padding-left: 37px;
     position: relative;
    z-index: 99;
+   box-sizing: border-box;
 }
 
 .main_login .sign_up_wrap .left_side.welc_left {
@@ -272,9 +273,6 @@ span.select2.select2-container {
     font-weight: 400 !important;
 }
 
-.main_login .sign_up_wrap .right_side div.pms_field input:focus + label, .main_login .sign_up_wrap .right_side div.pms_field input.active-text + label {
-    font-weight: bold !important;
-}
 .strength_wrapper a.c_button_strength {
     width: 11%;
     border: 1px solid #cecece;
@@ -356,7 +354,7 @@ span.select2.select2-container {
 
 
 .main_login .sign_up_wrap .right_side div.pms_field .m-input {
-    width: 77%;
+    width: 88%;
     display: inline-block;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -414,7 +412,7 @@ footer .container {
     z-index: 99;
     position: relative;
 }
-.whitepaper { display: none; }
+
 .ask_wrap .container {
     width: 1170px;
     margin: 0 auto;

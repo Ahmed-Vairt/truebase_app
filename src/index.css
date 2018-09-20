@@ -124,7 +124,7 @@ footer .bottom_footer nav.mdl-navigation a {
   padding: 13px 18px;
   font-weight: bold;
   display: block;
-  width: 93%;
+  width: 100%;
   color: #777;
   border: 1px solid #dcdcdc;
   margin-bottom: 17px;
@@ -240,7 +240,6 @@ footer .bottom_footer nav.mdl-navigation a {
 
 .main_login .sign_up_wrap .right_side input[type="text"] {
   padding-left: 58px;
-  width: 85%;
 }
 
 footer .bottom_footer {
@@ -632,8 +631,8 @@ div#example-basic
 }
 
 .main_login .sign_up_wrap .land_left a {
-  border: 2px solid #ff2b5b;
-  color: #ff2b5b;
+  border: 2px solid #888;
+  color: #888;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
@@ -677,6 +676,7 @@ form.form_main_page label {
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
+  color: #888;
 }
 
 form.form_main_page span.select2.select2-container.select2-container--default {
@@ -733,15 +733,14 @@ footer .bottom_footer .center {
 }
 
 footer .bottom_footer .center ul li a:hover {
-  background: #4990e2;
-  border-color: #4990e2;
+  background: #ff2b5b;
+border-color: #ff2b5b;
 }
 
 form.form_main_page input[type="text"] {
   padding-left: 20px !important;
   font-size: 18px !important;
   font-weight: 400 !important;
-  width: 92% !important;
   border: 2px solid #e6e6e6 !important;
   border-radius: 5px !important;
 }
@@ -761,6 +760,38 @@ footer .bottom_footer nav.mdl-navigation a:hover {
 
 
 
+footer .right_search form {
+  position: relative;
+}
+
+footer .right_search form i {
+  position: absolute;
+  top: 50%;
+  color: #808080;
+  margin-top: -7px;
+  left: 11px;
+}
+
+footer .right_search form input {
+  font-family: 'Calibri', sans-serif;
+  font-weight: bold;
+  color: #868686;
+  font-size: 13px;
+  padding: 12px 13px;
+  line-height: normal;
+  width: 100%;
+  padding-left: 34px;
+  border: 0px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+footer .right_search {
+  margin-bottom: 28px;
+  display: none;
+}
+
+
 
 
 @media only screen and (min-width: 356px) and (max-width: 600px)
@@ -770,6 +801,7 @@ footer .bottom_footer nav.mdl-navigation a:hover {
   }
 
 }
+
 
 @media only screen and (min-width: 356px) and (max-width: 400px)
 {
@@ -784,6 +816,7 @@ footer .bottom_footer nav.mdl-navigation a:hover {
   .landing_wrap .right_side .inner_side .right_center form.form_main_page > div {
       width: 45%;
   }
+  
 
 }
 
@@ -798,6 +831,9 @@ footer .bottom_footer nav.mdl-navigation a:hover {
 
 @media only screen and (max-width: 600px)
 {
+  
+footer .right_search {display: block;}
+.mdl-layout__header-row .container .right_search {display: none;}
   .main_login .sign_up_wrap {
     padding-top: 0px;
 }
@@ -905,7 +941,7 @@ footer .bottom_footer .colm_two {
 }
 .main_login .sign_up_wrap .left_side.forgot {
   width: 80%;
-  margin: 0px auto;
+  margin: 0px auto 30px;
   border: 0px;
   display: block;
   float: none;
@@ -918,9 +954,6 @@ footer .bottom_footer .colm_two {
   width: 79%;
 }
 
-.main_login .sign_up_wrap .right_side input[type="text"] {
-  width: 79%;
-}
 
 .main_login .sign_up_wrap {
   width: 100%;

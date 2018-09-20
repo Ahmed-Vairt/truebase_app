@@ -85,7 +85,7 @@ class App extends Component {
                                         <li>
                                             <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
                                             <h5>Pretend Co</h5>
-                                            <p>San Francisco, Ca, USA</p>
+                                            <p>San Francisco, Ca, USA</p> iam a good at ican Contribute
                                         </li>
                                         <li>
                                             <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
@@ -103,6 +103,36 @@ class App extends Component {
                   <Main />
                   <footer>
                       <div className="container">
+                        
+                        <div className="right_search">
+                            <form><i className="fa fa-search"></i>
+                            <input type="text" className="key_input" placeholder="Search for Companies or People" />
+                                <div className="sarch_rslt">
+                                    <ul>
+                                        <li>
+                                            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
+                                            <h5>Pretend Co</h5>
+                                            <p>San Francisco, Ca, USA</p>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
+                                            <h5>Pretend Co</h5>
+                                            <p>San Francisco, Ca, USA</p>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
+                                            <h5>Pretend Co</h5>
+                                            <p>San Francisco, Ca, USA</p>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&h=350" />
+                                            <h5>Pretend Co</h5>
+                                            <p>San Francisco, Ca, USA</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
                         <div className="bottom_footer">
                             <div className="lefts">
                                 <Navigation>
