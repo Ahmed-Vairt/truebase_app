@@ -669,7 +669,27 @@ form.form_main_page h3 {
   line-height: 57px; text-align: center;
   color: #ff2b5b;
 }
+form.form_main_page.skill_forms a.add_btn {
+  width: 45%;
+  background: #ff2b5b;
+  border: 0px;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 5px;
+  font-size: 19px;
+  font-family: 'Calibri', sans-serif;
+  margin-bottom: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
 
+form.form_main_page.skill_forms input[type="submit"] {
+  width: 45% !important;
+  display: inline-block;
+  float: none;
+  box-sizing: border-box;
+}
 form.form_main_page label {
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
@@ -692,9 +712,9 @@ form.form_main_page span.select2.select2-container.select2-container--default {
 }
 footer .bottom_footer nav.mdl-navigation a {
   display: block;
-  font-size: 16px;
+  font-size: 13px;
   font-family: 'Calibri', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 3px;
   letter-spacing: 1px;
 }
@@ -756,7 +776,9 @@ footer .bottom_footer nav.mdl-navigation a:hover {
 
 
 
-
+.mdl-layout__content {
+  overflow: visible;
+}
 
 
 

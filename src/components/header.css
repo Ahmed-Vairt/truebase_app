@@ -31,10 +31,11 @@
 }
 
 .mdl-layout__header-row .container nav.mdl-navigation a {
-    font-weight: bold;
     font-size: 16px;
 }
-
+.main_login .sign_up_wrap .right_side input[type="submit"] {
+    cursor: pointer;
+}
 #canvas-holder {width:400px; margin-left:-66px;}
 #canvas-holder canvas {
     -moz-user-select: none;

@@ -12,25 +12,25 @@ class WellcomBack extends Component{
                         <p>Please setup your password and basic information.</p>
                     </div>
                     <div className="right_side welcm_back">
-                        <form action="/skills">
+                        <form action="/setup/contribute">
                             <div className="pms_field">
-                                <input type="text" />
-                                <label className="default_lable">Your favourite handle</label>
+                                <input type="text" required/>
+                                <label className="default_lable">Username</label>
                                 <label className="selected_label">Truebase.io/</label>
                             </div>
                             <div className="pms_field">
-                                <input type="text" />
+                                <input type="text" required />
                                 <label>First Name</label>
                             </div>
                             <div className="pms_field">
-                                <input type="text" />
+                                <input type="text" required />
                                 <label>Last Name</label>
                             </div>
                             <div className="pms_field">
                                 <div id="password_strength"></div>
                             </div>
                             <div className="pms_field">
-                                <input type="password" />
+                                <input type="password" required />
                                 <label>Confirm Password</label>
                             </div>
                             <input type="submit" value="Proceed" />

@@ -138,7 +138,6 @@ class App extends Component {
                                 <Navigation>
                                     <a href="https://www.truebase.io/privacy/">Privacy Policy</a>
                                     <a href="https://www.truebase.io/terms/">Term of Use</a>
-                                    <a href="/">Terms & Conditions</a>
                                 </Navigation>
                             </div>
                             <div className="colm_two">

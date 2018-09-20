@@ -174,6 +174,13 @@ span.select2.select2-container {
     padding-top: 100px;
 }
 
+.mdl-layout__content {
+    background: #fff;
+}
+
+body {
+    background: #949494;
+}
 .main_login .sign_up_wrap .right_side.welcm_back input[type="text"], .main_login .sign_up_wrap .right_side.welcm_back input[type="password"] {
     padding-left: 20px;
     font-family: 'Calibri', sans-serif;
@@ -185,7 +192,25 @@ span.select2.select2-container {
    z-index: 99;
    box-sizing: border-box;
 }
+.pswd_info.abc {
+    display: none !important;
+}
+cite.new_s cite.new_row {
+    font-style: normal;
+    border-top: 2px solid #e2e2e2;
+    display: block;
+    margin-top: 19px;
+    padding-top: 19px;
+}
+.left_side.welc_left.skills_lfts {
+    border: 0px;
+}
 
+.right_side.skills.welcm_back.rights_ls.ac {
+    border-left: 1px solid #e0e0e0;
+}
+.add_new_row {display: none;}
+.new_s .add_new_row {display: block;}
 .main_login .sign_up_wrap .left_side.welc_left {
     padding-bottom: 250px;
 }
@@ -391,10 +416,6 @@ span.select2.select2-container {
 footer {
     background-color: #949494;
     padding: 80px 80px;
-    background-image: url(/static/media/main_one.c30e48c7.png), url(/static/media/main_one.c30e48c7.png);
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center;
     position: relative;
 }
 footer:after {
@@ -666,7 +687,7 @@ footer .container {
 }
 
 .skills cite.whitepaper {
-    font-style: normal; display: none;
+    font-style: normal; 
 }
 
 .skills cite.whitepaper span.select2-selection.select2-selection--multiple {

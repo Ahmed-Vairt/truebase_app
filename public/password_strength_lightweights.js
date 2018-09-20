@@ -75,6 +75,7 @@ Dependencies:
             that._toggle_input(that.content.$textInput);
             that._toggle_input(that.content.$passwordInput);
 
+            $('.pswd_info').addClass('abc');
             var text = that.content.$passwordInput.is(":visible") ? that.options.showPasswordText: that.options.hidePasswordText;
             $(event.target).text(text);
         });
@@ -95,6 +96,7 @@ Dependencies:
             var password = $s.val();
             $t.val(password);
             $('.main_login .sign_up_wrap .right_side.welcm_back .m-input').addClass('active-text');
+            $('.pswd_info').removeClass('abc');
         });
     },
 
@@ -118,8 +120,10 @@ Dependencies:
             that._update_info('letter', character);
         }).focus(function () {
             that.content.$pswdInfo.slideDown();
+            $('.pswd_info').removeClass('abc');
         }).blur(function () {
             that.content.$pswdInfo.slideUp();
+            $('.pswd_info').removeClass('abc');
         });
     },
 
