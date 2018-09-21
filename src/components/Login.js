@@ -22,7 +22,7 @@ class Login extends Component{
                                 <label>Password</label>
                             </div>
                             <input type="submit" value="Login" />
-                            <p>By siging in, you indicate that you have read and agree to our <a href="https://www.truebase.io/terms/">terms and condition</a> and <a href="https://www.truebase.io/privacy/">privacy policy</a>.</p>
+                            <p>By siging in, you indicate that you have read and agree to our <a href="/terms">terms and condition</a> and <a href="/privacy">privacy policy</a>.</p>
                             <a href="/forgot">Forgot your password?</a>
                         </form>
                     </div>

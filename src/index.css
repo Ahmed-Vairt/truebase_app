@@ -161,7 +161,6 @@ footer .bottom_footer nav.mdl-navigation a {
 .main_login .sign_up_wrap .right_side p {
   font-family: 'Calibri', sans-serif;
   font-size: 15px;
-  font-weight: bold;
   color: #a09b9b;
   margin-bottom: 23px;
 }
@@ -170,8 +169,7 @@ footer .bottom_footer nav.mdl-navigation a {
   display: block;
   text-align: center;
   text-decoration: none;
-  font-size: 19px;
-  font-weight: bold;
+  font-size: 17px;
   color: #a09b9b;
 }
 
@@ -224,7 +222,7 @@ footer .bottom_footer nav.mdl-navigation a {
 .mdl-layout__header-row .container .right_search input {
   padding-left: 34px;
   font-family: 'Calibri', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   color: #868686;
   font-size: 13px;
 }
@@ -625,7 +623,7 @@ div#example-basic
 
 .main_login .sign_up_wrap .land_left h5 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 23px;
   color: #777;
 }
@@ -638,7 +636,6 @@ div#example-basic
   display: inline-block;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
-  font-weight: bold;
   border-radius: 42px;
   margin-top: 15px;
 }
@@ -684,16 +681,9 @@ form.form_main_page.skill_forms a.add_btn {
   margin-right: 10px;
 }
 
-form.form_main_page.skill_forms input[type="submit"] {
-  width: 45% !important;
-  display: inline-block;
-  float: none;
-  box-sizing: border-box;
-}
 form.form_main_page label {
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
-  font-weight: bold;
   display: block;
   margin-bottom: 10px;
   color: #888;
@@ -705,7 +695,10 @@ form.form_main_page span.select2.select2-container.select2-container--default {
 
 .main_login .sign_up_wrap .left_side.welc_left.land_left {
   padding-bottom: 68px;
-  padding-top: 34px;
+  padding-top: 20px;
+}
+.main_login .sign_up_wrap .left_side.welc_left.land_left h2 {
+  margin-top: 0px;
 }
 .main_login .sign_up_wrap .right_side.rights_ls {
   padding-top: 20px;
@@ -759,7 +752,6 @@ border-color: #ff2b5b;
 
 form.form_main_page input[type="text"] {
   padding-left: 20px !important;
-  font-size: 18px !important;
   font-weight: 400 !important;
   border: 2px solid #e6e6e6 !important;
   border-radius: 5px !important;
@@ -812,6 +804,129 @@ footer .right_search {
   margin-bottom: 28px;
   display: none;
 }
+.terms .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.terms {
+  padding-top: 100px; margin-bottom:40px;
+}
+
+.terms h1 {
+  font-family: 'Calibri', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.terms h2 {
+  font-family: 'Calibri', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0px 0px 9px;
+}
+
+cite.skill_boxs cite.ons {
+  font-style: normal;
+  display: inline-block;
+  margin-right: 20px;
+  width: 42%;
+}
+
+cite.skill_boxs a.minus {
+  position: absolute;
+}
+
+cite.skill_boxs {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+
+cite.skill_row_wrap {
+  display: none;
+}
+cite.loads cite.skill_boxs a.minus {
+  position: absolute;
+  color: #ff2b5b;
+  right: 20px;
+  top: 50%;
+  margin-top: -10px;
+}
+cite.skill_row.ui-state-default {
+  width: 100%;
+  background: rgba(251, 251, 251, 0.55);
+  display: block;
+}
+
+cite.skill_row.ui-state-default cite.skill_boxs {
+  padding: 14px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+cite.loads cite.skill_boxs a.minus i {
+  font-size: 12px;
+}
+cite.skill_row.ui-state-default cite.skill_boxs span.fa.fa-arrows-alt {
+  margin-right: 12px;
+  vertical-align: 5px;
+  color: #4990e2;
+}
+
+.skill_forms a.pluss {
+  margin-top: 10px;
+}
+cite.loads cite.skill_boxs:hover a.minus {
+  display: block;
+}
+.skill_forms a.pluss {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #ff2b5b;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.skill_forms a.pluss i {
+  color: #fff;
+  font-size: 12px;
+  vertical-align: 2px;
+}
+
+cite.skill_boxs a.plusss {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #ff2b5b;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+cite.skill_boxs a.plusss i {
+  color: #fff;
+  font-size: 12px;
+  vertical-align: 2px;
+}
+
+cite.loads cite.skill_boxs {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -853,7 +968,7 @@ footer .right_search {
 
 @media only screen and (max-width: 600px)
 {
-  
+  .terms .container {width:90%;} 
 footer .right_search {display: block;}
 .mdl-layout__header-row .container .right_search {display: none;}
   .main_login .sign_up_wrap {

@@ -14,23 +14,11 @@ class WellcomBack extends Component{
                     <div className="right_side skills  welcm_back rights_ls ac">
                         <h2>Please select any five skills you're good at doning.</h2>
                         <form className="form_main_page skill_forms" action="/company">
-                            <label>I am a </label>
-                            <select className="basic">
-                                <option value="token">Token economist</option>
-                                <option value="">Advisor</option>
-                                <option value="">Agency</option>
-                                <option value="">Co-founder</option>
-                                <option value="">Community Manager</option>
-                                <option value="">Designer</option>
-                                <option value="">Developer</option>
-                                <option value="">Economist</option>
-                                <option value="">Investor</option>
-                            </select>
-                            
-                            <cite className="add_new_row">
-                                <cite className="new_row">
+
+                            <cite className="skill_boxs mainss">
+                                <cite className="ons">
                                     <label>I am a </label>
-                                    <select className="basics">
+                                    <select className="basic">
                                         <option value="token">Token economist</option>
                                         <option value="">Advisor</option>
                                         <option value="">Agency</option>
@@ -41,41 +29,65 @@ class WellcomBack extends Component{
                                         <option value="">Economist</option>
                                         <option value="">Investor</option>
                                     </select>
-                                    <cite className="whitepaper">
-                                        <label>I Contribute</label>
-                                        <select className="basics" multiple="multiple">
-                                            <option value="">Please Select any five Skills</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                            <option value="">Lorem ipsum</option>
-                                        </select>
-                                    </cite>
                                 </cite>
-                                
+                                <cite className="ons">
+                                    <label>I can Contribute</label>
+                                    <select className="basic">
+                                        <option value="">Please Select any five Skills</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </cite>
                             </cite>
 
-                            <cite className="whitepaper">
-                                <label>I Contribute</label>
-                                <select className="basic" multiple="multiple">
-                                    <option value="">Please Select any five Skills</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                    <option value="">Lorem ipsum</option>
-                                </select>
+
+                            <cite className="skill_row_wrap">
+                                <cite className="skill_row ui-state-default">
+                                    <cite className="skill_boxs">
+                                    <span class="fa fa-arrows-alt"></span>
+                                        <cite className="ons">
+                                            <label>I am a </label>
+                                            <select className="basics">
+                                                <option value="token">Token economist</option>
+                                                <option value="">Advisor</option>
+                                                <option value="">Agency</option>
+                                                <option value="">Co-founder</option>
+                                                <option value="">Community Manager</option>
+                                                <option value="">Designer</option>
+                                                <option value="">Developer</option>
+                                                <option value="">Economist</option>
+                                                <option value="">Investor</option>
+                                            </select>
+                                        </cite>
+                                        <cite className="ons">
+                                            <label>I can Contribute</label>
+                                            <select className="basics">
+                                                <option value="">Please Select any five Skills</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </cite>
+                                        <a href="#" className="minus" ><i className="fa fa-minus"></i></a>
+                                        
+                                    </cite>
+                                </cite>
                             </cite>
-                            <cite class="new_s">
-                            
+                            <cite className="loads">
+
                             </cite>
+                            <a href="#" className="pluss"><i className="fa fa-plus"></i></a>
+                            <div id='demo'> </div>
                             <div className="clearfix"></div>
-                            <a href="#" className="add_btn">Add New</a>
                             <input type="submit" value="Create your account" />
                             <div className="clearfix"></div>
                         </form>

@@ -136,8 +136,8 @@ class App extends Component {
                         <div className="bottom_footer">
                             <div className="lefts">
                                 <Navigation>
-                                    <a href="https://www.truebase.io/privacy/">Privacy Policy</a>
-                                    <a href="https://www.truebase.io/terms/">Term of Use</a>
+                                    <a href="/privacy">Privacy Policy</a>
+                                    <a href="/terms">Term of Use</a>
                                 </Navigation>
                             </div>
                             <div className="colm_two">

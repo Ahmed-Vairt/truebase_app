@@ -12,6 +12,8 @@ import Company from './company';
 import Profile from './profile';
 import Ask from './ask';
 import Newask from './new_ask';
+import Terms from './terms';
+import Privacy from './privacy';
 import { BrowserRouter } from 'react-router-dom';
 
 const Main = ()=> (
@@ -29,6 +31,8 @@ const Main = ()=> (
 <Route path='/profile' component={ Profile } />
 <Route path='/ask' component={ Ask } />
 <Route path='/new_ask' component={ Newask } />
+<Route path='/terms' component={ Terms } />
+<Route path='/privacy' component={ Privacy } />
 </Switch>
 </BrowserRouter>
 

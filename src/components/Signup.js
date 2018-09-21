@@ -18,7 +18,7 @@ class Signup extends Component{
                                 <label>Email</label>
                             </div>
                             <input type="submit" value="Sign Up" />
-                            <p>By siging up, you indicate that you have read and agree to our <a href='https://www.truebase.io/terms/'>terms and condition</a> and <a href='https://www.truebase.io/privacy/'>privacy policy</a>.</p>
+                            <p>By siging up, you indicate that you have read and agree to our <a href='/terms'>terms and condition</a> and <a href='/privacy'>privacy policy</a>.</p>
                         </form>
                     </div>
                 </div>
