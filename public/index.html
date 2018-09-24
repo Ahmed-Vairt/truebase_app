@@ -47,27 +47,56 @@
 <script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
 <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 <script src="%PUBLIC_URL%/jquery.steps.js"></script>
-<script src="%PUBLIC_URL%/jquery.nicescroll.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="%PUBLIC_URL%/jquery.validate.min.js"></script>
 
 
 <script>
   
 $(document).ready(function() {  
-  
+    $.validator.addMethod("pwcheck", function(value) {
+   return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) // consists of only these
+       && /[a-z]/.test(value) // has a lowercase letter
+       && /\d/.test(value) // has a digit
+});
 
-  $(".mdl-layout__inner-container").niceScroll(); 
-  
+ $("#setup_acnt").validate({
+           rules: {
+            password: { 
+                 required: true,
+                    pwcheck: true,
+                    minlength: 8,
+                    maxlength: 20,
+
+               } , 
+
+                   cfmPassword: { 
+                    equalTo: "#password",
+                     minlength: 8,
+                     maxlength: 20
+               }
+
+
+           },
+     messages:{
+         password: { 
+                 required:"the password is required",
+                                pwcheck: "Check All requirment",
+                                minlength: "8-20 Characters"
+
+               }
+     }
+
+});
+
   $( ".loads" ).sortable();
   $(document).ready(function(){
         $(".pluss").click(function(event){
             event.preventDefault();
             $(".skill_row_wrap .skill_row").clone().appendTo(".loads");
             $('.loads .basics').select2();
-            $(".mdl-layout__inner-container").niceScroll(); 
-            $(".mdl-layout__inner-container").getNiceScroll().resize();
             $('.minus').click(function(){
-                $(this).parents('.skill_row').hide();
+                $(this).parents('.skill_row').remove();
                 $( ".loads" ).sortable();
             });
         });
@@ -185,7 +214,7 @@ else if(url.indexOf('setup/account') > -1) {
   
 });
   
-$(".new_contribute").niceScroll();  
+
 </script>
 <script>
     var randomScalingFactor = function() {
@@ -221,6 +250,38 @@ $(".new_contribute").niceScroll();
 
 
 <script>
+    
+
+    $(document).ready(function(e) {
+$('#btnValidate').click(function(event) {
+    event.preventDefault();
+var sEmail = $('#txtEmail').val();
+// Checking Empty Fields
+if ($.trim(sEmail).length == 0) {
+    $('.emails_validation').show('not_oks');
+    $('.emails_validation').show();
+}
+if (validateEmail(sEmail)) {
+    $('#txtEmail').addClass('oks');
+    $('.emails_validation').hide();
+}
+else {
+    $('#txtEmail').addClass('not_oks');
+    $('.emails_validation').show();
+}
+});
+});
+// Function that validates email address through a regular expression.
+function validateEmail(sEmail) {
+    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+if (filter.test(sEmail)) {
+return true;
+}
+else {
+return false;
+}
+}
+
     </script>
 
 

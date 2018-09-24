@@ -7,51 +7,19 @@ class WellcomBack extends Component{
             <div className="main_login">
                 <div className="sign_up_wrap">
                     <div className="left_side welc_left skills_lfts">
-                        <h2>Which Ask Match <br /> Your Skills?</h2>
-                        <h5>One way to search for ask is to think about the things you are good ad doing and than find careers that match your skills.</h5>
-                      
+                        <h2>Be a Part of the Community</h2>
+                        <p>Truebase members are here to help each other grow and advance our businesses and careers. Let us know how you can help so that we can match you with the needs of other members.</p>
                     </div>
                     <div className="right_side skills  welcm_back rights_ls ac">
-                        <h2>Please select any five skills you're good at doning.</h2>
+                        <h2>Community Contributions</h2>
                         <form className="form_main_page skill_forms" action="/company">
-
-                            <cite className="skill_boxs mainss">
-                                <cite className="ons">
-                                    <label>I am a </label>
-                                    <select className="basic">
-                                        <option value="token">Token economist</option>
-                                        <option value="">Advisor</option>
-                                        <option value="">Agency</option>
-                                        <option value="">Co-founder</option>
-                                        <option value="">Community Manager</option>
-                                        <option value="">Designer</option>
-                                        <option value="">Developer</option>
-                                        <option value="">Economist</option>
-                                        <option value="">Investor</option>
-                                    </select>
-                                </cite>
-                                <cite className="ons">
-                                    <label>I can Contribute</label>
-                                    <select className="basic">
-                                        <option value="">Please Select any five Skills</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                        <option value="">Lorem ipsum</option>
-                                    </select>
-                                </cite>
-                            </cite>
-
 
                             <cite className="skill_row_wrap">
                                 <cite className="skill_row ui-state-default">
                                     <cite className="skill_boxs">
                                     <span class="fa fa-arrows-alt"></span>
                                         <cite className="ons">
-                                            <label>I am a </label>
+                                            <label>As a </label>
                                             <select className="basics">
                                                 <option value="token">Token economist</option>
                                                 <option value="">Advisor</option>
@@ -65,7 +33,7 @@ class WellcomBack extends Component{
                                             </select>
                                         </cite>
                                         <cite className="ons">
-                                            <label>I can Contribute</label>
+                                            <label>I can</label>
                                             <select className="basics">
                                                 <option value="">Please Select any five Skills</option>
                                                 <option value="">Lorem ipsum</option>
@@ -83,12 +51,42 @@ class WellcomBack extends Component{
                                 </cite>
                             </cite>
                             <cite className="loads">
-
+                                <cite className="skill_boxs mainss  ui-state-default">
+                                <cite className="innrs">
+                                    <span class="fa fa-arrows-alt"></span>
+                                    <cite className="ons">
+                                        <label>As a </label>
+                                        <select className="basic">
+                                            <option value="token">Token economist</option>
+                                            <option value="">Advisor</option>
+                                            <option value="">Agency</option>
+                                            <option value="">Co-founder</option>
+                                            <option value="">Community Manager</option>
+                                            <option value="">Designer</option>
+                                            <option value="">Developer</option>
+                                            <option value="">Economist</option>
+                                            <option value="">Investor</option>
+                                        </select>
+                                    </cite>
+                                    <cite className="ons">
+                                        <label>I can</label>
+                                        <select className="basic">
+                                            <option value="">Please Select any five Skills</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                            <option value="">Lorem ipsum</option>
+                                        </select>
+                                    </cite></cite>
+                                </cite>
                             </cite>
                             <a href="#" className="pluss"><i className="fa fa-plus"></i></a>
                             <div id='demo'> </div>
                             <div className="clearfix"></div>
-                            <input type="submit" value="Create your account" />
+                            <input type="submit" value="Join the Community" />
                             <div className="clearfix"></div>
                         </form>
                     </div>

@@ -101,7 +101,9 @@ class App extends Component {
               <Content>
                   <div className="page-content" />
                   <Main />
-                  <footer>
+              </Content>
+          </Layout>
+          <footer>
                       <div className="container">
                         
                         <div className="right_search">
@@ -133,7 +135,7 @@ class App extends Component {
                                 </div>
                             </form>
                         </div>
-                        <div className="bottom_footer">
+                        <div className="bottom_footer clearfix">
                             <div className="lefts">
                                 <Navigation>
                                     <a href="/privacy">Privacy Policy</a>
@@ -156,10 +158,11 @@ class App extends Component {
                             </div>
 
                         </div>
+                        <div className="footer-botm">
+                            <p>© Truebase Inc, 2018. All rights reserved.</p>
+                        </div>
                       </div>
                   </footer>
-              </Content>
-          </Layout>
       </div>
     );
   }

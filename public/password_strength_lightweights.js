@@ -36,7 +36,7 @@ Dependencies:
 
         //Note. Instead of this you can use templating. I did not want to have addition dependencies.
         this.element.addClass(options.strengthWrapperClass);
-        this.element.append('<input type="password" placeholder="" name="password" class="' + options.inputClass + '" "/>');
+        this.element.append('<input id="password" type="password" placeholder="" name="password" class="' + options.inputClass + '" " required/>');
         this.element.append('<label>Password</label>');
         this.element.append('<input type="text" class="' + options.inputClass + '" style="display:none"/>');
         this.element.append('<a href="" class="' + options.toggleButtonClass + '">' + options.showPasswordText + '</a>');

@@ -177,9 +177,8 @@ span.select2.select2-container {
 .mdl-layout__content {
     background: #fff;
 }
-
-body {
-    background: #949494;
+footer {
+    z-index: 999;
 }
 .main_login .sign_up_wrap .right_side.welcm_back input[type="text"], .main_login .sign_up_wrap .right_side.welcm_back input[type="password"] {
     padding-left: 20px;
@@ -203,9 +202,13 @@ cite.new_s cite.new_row {
     padding-top: 19px;
 }
 .left_side.welc_left.skills_lfts {
-    border: 0px;
+    border: 0px !important;
 }
-
+cite.skill_boxs.mainss span.fa.fa-arrows-alt {
+    margin-right: 12px;
+    vertical-align: 5px;
+    color: #4990e2;
+}
 .right_side.skills.welcm_back.rights_ls.ac {
     border-left: 1px solid #e0e0e0;
 }
@@ -267,7 +270,11 @@ cite.new_s cite.new_row {
 .main_login .sign_up_wrap .right_side div.pms_field {
     position: relative;
 }
-
+.emails_validation {display: none;}
+.main_login .sign_up_wrap .right_side p.emails_validation {
+    color: #ff2b5b;
+    text-align: center;
+}
 .main_login .sign_up_wrap .right_side div.pms_field label {
     position: absolute;
     font-family: 'Calibri', sans-serif;
@@ -332,7 +339,9 @@ cite.new_s cite.new_row {
 .c_strength_meter {
     display: none;
 }
-
+.main_login .sign_up_wrap .right_side form > a {
+    margin-bottom: 18px;
+}
 .pswd_info h4 {
     font-size: 16px;
     color: #ff2b5b;
@@ -414,8 +423,18 @@ cite.new_s cite.new_row {
 
 footer {
     background-color: #949494;
-    padding: 80px 80px;
+    padding: 80px 80px 30px;
     position: relative;
+}
+.footer-botm {
+    text-align: right;
+    margin: 0px;
+    padding-top: 24px;
+}
+
+.footer-botm p {
+    color: #fff;
+    margin: 0px;
 }
 footer:after {
     content: '';

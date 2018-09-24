@@ -8,11 +8,12 @@ class WellcomBack extends Component{
                 <div className="sign_up_wrap">
                     <div className="left_side welc_left">
                         <h2>Wellcome Back</h2>
-                        <h5>Before you Login and use Truebase,</h5>
-                        <p>Please setup your password and basic information.</p>
+                        <h5>Thanks for verifying your email address.</h5>
+                        <p>We just need a bit more information about you and how you can contribute to the Truebase community to complete setting up your account.</p>
                     </div>
                     <div className="right_side welcm_back">
-                        <form action="/setup/contribute">
+                        <h2>Account Information</h2>
+                        <form id="setup_acnt" action="/setup/contribute">
                             <div className="pms_field">
                                 <input type="text" required/>
                                 <label className="default_lable">Username</label>
@@ -23,14 +24,14 @@ class WellcomBack extends Component{
                                 <label>First Name</label>
                             </div>
                             <div className="pms_field">
-                                <input type="text" required />
+                                <input type="text" name="last" required />
                                 <label>Last Name</label>
                             </div>
                             <div className="pms_field">
                                 <div id="password_strength"></div>
                             </div>
                             <div className="pms_field">
-                                <input type="password" required />
+                                <input type="password"  name="cfmPassword" id="cfmPassword" required />
                                 <label>Confirm Password</label>
                             </div>
                             <input type="submit" value="Proceed" />

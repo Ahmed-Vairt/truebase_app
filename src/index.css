@@ -244,6 +244,9 @@ footer .bottom_footer {
   overflow: hidden;
 }
 
+.mdl-layout.mdl-js-layout {
+    position: relative;
+}
 footer .bottom_footer .lefts {
   width: 33%;
   float: left;
@@ -429,6 +432,17 @@ left: 11px;
 }
 
 
+.main_login .sign_up_wrap .right_side div.pms_field label.error + label {
+  display: none;
+  top: -10px;
+  background: #fff;
+  color: #ff2b5b;
+  z-index: 999;
+}
+
+.main_login .sign_up_wrap .right_side div.pms_field input.valid + label.error + label {
+  display: block;
+}
 
 .col_clear {
   margin: 0px -15px;
@@ -724,9 +738,14 @@ footer .bottom_footer .colm_two {
 footer .bottom_footer {
   margin: 0px;
 }
-
+.mdl-layout__inner-container {
+  overflow: hidden !important;
+}
+.mdl-layout.mdl-js-layout {
+  position: relative;
+  min-height: 90.5vh;
+}
 footer .bottom_footer .center ul li a {
-  border: 2px solid #fff;
   width: 42px;
   height: 42px;
   display: block;
@@ -742,12 +761,10 @@ footer .bottom_footer .center ul li a i {
 }
 
 footer .bottom_footer .center {
-  text-align: left;
+  text-align: right;
 }
-
-footer .bottom_footer .center ul li a:hover {
-  background: #ff2b5b;
-border-color: #ff2b5b;
+footer .bottom_footer .colm_two {
+  text-align: center;
 }
 
 form.form_main_page input[type="text"] {
@@ -893,7 +910,7 @@ cite.loads cite.skill_boxs:hover a.minus {
 .skill_forms a.pluss i {
   color: #fff;
   font-size: 12px;
-  vertical-align: 2px;
+  vertical-align: 1px;
 }
 
 cite.skill_boxs a.plusss {
@@ -910,16 +927,29 @@ cite.skill_boxs a.plusss i {
   font-size: 12px;
   vertical-align: 2px;
 }
-
-cite.loads cite.skill_boxs {
-  border-top: 1px solid #e0e0e0;
-  margin-top: 15px;
-  padding-top: 20px;
+cite.skill_boxs cite.innrs {
+  width: 100%;
+  background: rgba(251, 251, 251, 0.55);
+  display: block;
+  padding: 14px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+cite.loads.ui-sortable .ui-state-default {
+  border-top: 1px solid #cacaca;
+}
 
+cite.loads.ui-sortable .ui-state-default:first-child {
+  border: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
 
-
+.main_login .sign_up_wrap .right_side.welcm_back .not_oks {
+  border-color: #ff2b5b;
+}
 
 
 
@@ -1236,6 +1266,9 @@ footer .bottom_footer .right {
 
 footer .bottom_footer .lefts nav.mdl-navigation {
   display: block;
+  text-align: center;
+}
+footer .bottom_footer .colm_two {
   text-align: center;
 }
 
