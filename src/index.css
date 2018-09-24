@@ -743,7 +743,6 @@ footer .bottom_footer {
 }
 .mdl-layout.mdl-js-layout {
   position: relative;
-  min-height: 90.5vh;
 }
 footer .bottom_footer .center ul li a {
   width: 42px;
@@ -778,7 +777,9 @@ footer .bottom_footer nav.mdl-navigation a:hover {
 }
 
 
-
+.main_login .sign_up_wrap .right_side div.pms_field a.c_button_strength {
+  display: none;
+}
 
 
 
@@ -1273,3 +1274,13 @@ footer .bottom_footer .colm_two {
 }
 
 }
+
+
+@media only screen and (min-width: 1600px)
+{
+  .mdl-layout.mdl-js-layout {
+    min-height: 90.5vh;
+  }
+
+}
+

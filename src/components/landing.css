@@ -215,7 +215,7 @@ cite.skill_boxs.mainss span.fa.fa-arrows-alt {
 .add_new_row {display: none;}
 .new_s .add_new_row {display: block;}
 .main_login .sign_up_wrap .left_side.welc_left {
-    padding-bottom: 250px;
+    padding-bottom: 310px;
 }
 .main_login .sign_up_wrap .right_side.skills h2 {
     font-size: 40px;
@@ -385,13 +385,6 @@ cite.skill_boxs.mainss span.fa.fa-arrows-alt {
 }
 
 
-
-.main_login .sign_up_wrap .right_side div.pms_field .m-input {
-    width: 88%;
-    display: inline-block;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
 
 .main_login .sign_up_wrap .right_side div.pms_field a.c_button_strength {
     display: inline-block;

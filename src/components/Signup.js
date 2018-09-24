@@ -12,9 +12,9 @@ class Signup extends Component{
                     </div>
                     <div className="right_side  welcm_back">
                     <h2>Sign Up</h2>
-                        <form action="/setup/account">
+                        <form id="signups" action="/setup/account">
                             <div className="pms_field">
-                                <input type="text" placeholder="" id="txtEmail" required/>
+                                <input type="text"  placeholder="" id="txtEmail" name="txtEmail" required/>
                                 <label>Email</label>
                             </div>
                             <p className="emails_validation">Please enter valid email address</p>

@@ -60,6 +60,10 @@ $(document).ready(function() {
        && /\d/.test(value) // has a digit
 });
 
+    $.validator.addMethod("emails", function(value) {
+   return /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(value)
+});
+
  $("#setup_acnt").validate({
            rules: {
             password: { 
@@ -88,6 +92,25 @@ $(document).ready(function() {
      }
 
 });
+
+ $("#signups").validate({
+           rules: {
+            txtEmail: {
+                    required: true,
+                    emails: true
+                },
+
+           },
+     messages:{
+        txtEmail: { 
+                required:"Please Enter Valid email",
+                emails: "Please Enter Valid email"
+
+               }
+     }
+
+});
+
 
   $( ".loads" ).sortable();
   $(document).ready(function(){
@@ -251,37 +274,6 @@ else if(url.indexOf('setup/account') > -1) {
 
 <script>
     
-
-    $(document).ready(function(e) {
-$('#btnValidate').click(function(event) {
-    event.preventDefault();
-var sEmail = $('#txtEmail').val();
-// Checking Empty Fields
-if ($.trim(sEmail).length == 0) {
-    $('.emails_validation').show('not_oks');
-    $('.emails_validation').show();
-}
-if (validateEmail(sEmail)) {
-    $('#txtEmail').addClass('oks');
-    $('.emails_validation').hide();
-}
-else {
-    $('#txtEmail').addClass('not_oks');
-    $('.emails_validation').show();
-}
-});
-});
-// Function that validates email address through a regular expression.
-function validateEmail(sEmail) {
-    var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-if (filter.test(sEmail)) {
-return true;
-}
-else {
-return false;
-}
-}
-
     </script>
 
 
